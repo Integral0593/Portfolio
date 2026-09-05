@@ -428,19 +428,6 @@ section + section {
   gap: 10px;
 }
 
-.project-card .thumb {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: var(--radius);
-  border: 1px dashed var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  background: var(--bg);
-}
-
 .project-card h3 {
   font-size: 1.1rem;
 }
