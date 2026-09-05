@@ -6,7 +6,7 @@
   the project's "interactive feature" requirement. Reviewed and adapted by hand.
   See /prompt-log.md for the actual prompts used.
 
-  This file is shared across all pages via <script src="/js/script.js">.
+  This file is shared across all pages via <script src="script.js">.
 */
 
 (function () {
