@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Vera Zhou</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <span class="nav-name">Vera Zhou</span>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">&#9776;</label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-toggle" type="button">Light mode</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>About me</h1>
+    </div>
+
+    <section class="about-grid">
+      <!--
+        AVATAR: swap the placeholder below for your photo once you upload it.
+        Replace the whole <div class="avatar">...</div> block with:
+        <div class="avatar"><img src="assets/headshot.jpg" alt="Photo of Vera Zhou" /></div>
+      -->
+      <div class="avatar"><img src="assets/headshot.jpg" alt="Photo of Vera Zhou" /></div>
+
+      <div>
+        <p>
+          I'm a Statistics and Machine Learning student at Carnegie Mellon University
+          (Class of 2027), originally from Nanjing, China. I'm drawn to problems where
+          measurement, language, and machine learning meet &mdash; from designing rubrics
+          that quantify how clearly humans and AI judges communicate, to teaching a
+          robot arm to plan its own motion.
+        </p>
+        <p>
+          Outside of research and coursework, I've spent time as a peer tutor for
+          Introduction to Machine Learning, and I like hackathons for the same reason
+          I like research: both reward figuring out the actual constraints of a
+          problem before you start building.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <p class="section-label">Education</p>
+      <h2>Carnegie Mellon University</h2>
+      <p>B.S. in Statistics and Machine Learning &middot; Aug 2023 &ndash; May 2027</p>
+      <p style="color: var(--text-muted);">
+        Relevant coursework: Introduction to Machine Learning, Natural Language
+        Processing, Modern Regression, Statistical Computing, Principles of
+        Imperative Computation, Probability &amp; Statistical Inference.
+      </p>
+    </section>
+
+    <section>
+      <p class="section-label">Skills</p>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>R</li>
+        <li>SQL</li>
+        <li>PyTorch</li>
+        <li>Pandas / NumPy</li>
+        <li>ROS 2 / MoveIt 2</li>
+        <li>Matplotlib</li>
+      </ul>
+    </section>
+
+    <section>
+      <p class="section-label">Interests</p>
+      <ul class="interests-list">
+        <li>LLM evaluation</li>
+        <li>Embodied AI &amp; robotics</li>
+        <li>Cross-cultural computational linguistics</li>
+        <li>Applied statistics</li>
+      </ul>
+    </section>
+
+    <section>
+      <p class="section-label">Experience highlights</p>
+      <ul class="timeline">
+        <li>
+          <div class="role">Robotic Arm Control &amp; Embodied AI Intern &mdash; Whale Cloud Technology</div>
+          <div class="meta">May 2026 &ndash; Aug 2026</div>
+          <p>Built a ROS 2 + MoveIt 2 control pipeline for a 5-DoF robot arm and ran full Vision-Language-Action training workflows.</p>
+        </li>
+        <li>
+          <div class="role">Research Assistant &mdash; Cross-Expertise Communication Clarity</div>
+          <div class="meta">May 2026 &ndash; Aug 2026 &middot; Advisor: Dr. Pingbo Tang, CMU</div>
+          <p>Designed a clarity rubric and validated human vs. LLM-judge agreement on technical communication, feeding a downstream information-retrieval system.</p>
+        </li>
+        <li>
+          <div class="role">Research Assistant &mdash; Cross-Cultural Semantics via LLM Agents</div>
+          <div class="meta">Jan 2026 &ndash; Jul 2026 &middot; Advisor: Dr. Wei Li, Chinese Academy of Sciences</div>
+          <p>Reproduced and extended a multi-agent debate framework for classical Chinese poetry translation; paper accepted for oral presentation at AIEE 2026.</p>
+        </li>
+        <li>
+          <div class="role">Peer Tutor, Introduction to Machine Learning (10-301) &mdash; CMU</div>
+          <div class="meta">Oct 2025 &ndash; Dec 2025</div>
+          <p>Led weekly study sessions on supervised learning, neural networks, and RL; 95%+ satisfaction in anonymous feedback.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <a class="btn btn-secondary" href="assets/resume.pdf">Download full resume (PDF)</a>
+      <!-- Add your resume PDF to /assets and update the filename above if different. -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; 2026 Vera Zhou &middot; Built for CMU 15-113
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+  AI USAGE NOTE (site-wide):
+  This portfolio's structure and starter markup were drafted with help from
+  Claude (Anthropic), based on a brief (dark navy/tech theme, CMU Statistics &
+  Machine Learning student, accent color #0038D7). Content (bio, project
+  descriptions, resume details) comes from Vera Zhou's own resume. Layout and
+  code were reviewed and adapted by hand rather than used as-is.
+  Full prompts are logged in /prompt-log.md.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vera Zhou | Portfolio</title>
+  <meta name="description" content="Portfolio of Vera (Yuxin) Zhou, Statistics and Machine Learning student at Carnegie Mellon University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <span class="nav-name">Vera Zhou</span>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">&#9776;</label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-toggle" type="button">Light mode</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Hi, I'm Vera &mdash; I build things at the intersection of statistics, machine learning, and robotics.</h1>
+        <p class="tagline">
+          Statistics &amp; Machine Learning student at Carnegie Mellon University,
+          currently exploring embodied AI, model evaluation, and applied ML research.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="projects.html">View my projects</a>
+          <a class="btn btn-secondary" href="about.html">More about me</a>
+        </div>
+      </div>
+
+      <div class="hero-graphic" aria-hidden="true">
+        <!--
+          AI USAGE NOTE: this inline SVG (a simple node/edge network graphic,
+          nodding to ML graph structures) was generated with Claude based on
+          the design brief, then color values were swapped to use the
+          site's CSS custom properties so it adapts to dark/light mode.
+        -->
+        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="var(--border)" stroke-width="1.5">
+            <line x1="120" y1="40" x2="60" y2="110" />
+            <line x1="120" y1="40" x2="180" y2="110" />
+            <line x1="60" y1="110" x2="120" y2="180" />
+            <line x1="180" y1="110" x2="120" y2="180" />
+            <line x1="60" y1="110" x2="180" y2="110" />
+            <line x1="120" y1="40" x2="120" y2="180" />
+          </g>
+          <circle cx="120" cy="40" r="10" fill="var(--accent)" />
+          <circle cx="60" cy="110" r="8" fill="var(--accent-light)" />
+          <circle cx="180" cy="110" r="8" fill="var(--accent-light)" />
+          <circle cx="120" cy="180" r="10" fill="var(--accent)" />
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; 2026 Vera Zhou &middot; Built for CMU 15-113
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
